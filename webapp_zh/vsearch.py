@@ -1,10 +1,9 @@
 
 def search4prepositions_zhs(phrase: str) -> set:
-    """Return any prepositions found in a supplied phrase."""
+    return line.intersection(set(phrase))
+phrase= set("廖汉腾","杨正煜","温灵","赵景","李克和","肖贤彬","孟璐","罗曼","方婉祯","梅晓云","黄龄仪","杨珂","罗娟","杨萍","艾民伟")
 
-    vowels = set('临乎与为共冲到兜于即从以似假去让诸及往迆连迎道遵对导寻将当叫吃合同向和问如尽打执把投拦按捉洎给维缘在因惟就比照较方爿暨拿替望朝爰直由率被用繇齐至管自起趁践跟')
-    return vowels.intersection(set(phrase))
-
-def search4letters(phrase: str, letters: str='临乎与为共冲到兜于即从以似假去让诸及往迆连迎道遵对导寻将当叫吃合同向和问如尽打执把投拦按捉洎给维缘在因惟就比照较方爿暨拿替望朝爰直由率被用繇齐至管自起趁践跟') -> set:
-    """Return a set of the 'letters' found in 'phrase'."""
+def search4letters(phrase: str, letters: str) -> set:
     return set(letters).intersection(set(phrase))
+letters=set("网页设计与制作","信息可视化设计","摄像基础","矢量图形设计","报纸编辑学","电视摄像艺术","摄像基础","媒介经济学","媒介素养导论","中国古代文学史（三）","古代汉语（上）","基础写作",
+"广告文案写作","中外广告赏析","美学与生活","中西文化概论","网络传播学","电视摄像艺术","非线性编辑（上）","广告心理学","深度报道策划与写作","纪录片赏析")
